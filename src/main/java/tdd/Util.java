@@ -5,8 +5,11 @@ package tdd;
  */
 public class Util {
 
-    public String mommify(){
-        return "h";
+    public String mommify(String word){
+        if("a".equals(word)){
+            return "mommy";
+        }
+        return null;
     }
 
 }

@@ -16,8 +16,10 @@ public class UtilTest {
     }
 
     @Test
+    /* should return "mommy" when given "a" */
     public void mommifyTest(){
-        assertEquals("h", util.mommify());
+        String expected = "mommy";
+        String result  = util.mommify("a");
     }
 
 }
