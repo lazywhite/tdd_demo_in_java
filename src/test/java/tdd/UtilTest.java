@@ -2,6 +2,9 @@ package tdd;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.Arrays;
+
 import static junit.framework.Assert.*;
 
 /**
@@ -19,7 +22,8 @@ public class UtilTest {
     /* should return "mommy" when given "a" */
     public void mommifyTest(){
         String expected = "mommy";
-        String result  = util.mommify("a");
+        String[] words = {"a", "e", "i", "o", "u"};
+        Arrays.asList(words).forEach(word -> assertEquals("mommy", util.mommify(word)));
     }
 
 }
