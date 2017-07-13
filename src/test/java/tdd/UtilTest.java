@@ -35,4 +35,11 @@ public class UtilTest {
         String result = util.mommify("she");
         assertEquals(expected, result);
     }
+    @Test
+    /* 元音超过30%的字符串, 并有连续元音出现, 应该将连续元音替换成一个mommy*/
+    public void mommifyTest03() {
+        String expected = "shmommytmommy";
+        String result = util.mommify("sheete");
+        assertEquals(expected, result);
+    }
 }
