@@ -28,4 +28,11 @@ public class UtilTest {
         assertEquals("c", util.mommify("c"));
     }
 
+    @Test
+    /* 元音超过30%的字符串, 应该将元音替换成mommy*/
+    public void mommifyTest02(){
+        String expected = "shmommy";
+        String result = util.mommify("she");
+        assertEquals(expected, result);
+    }
 }
