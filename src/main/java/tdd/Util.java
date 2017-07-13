@@ -8,11 +8,13 @@ import java.util.Arrays;
 public class Util {
 
     public String mommify(String word){
+        //元音字符, 返回mommy
         String[] words = {"a", "e", "i", "o", "u"};
         if(Arrays.asList(words).contains(word)){
             return "mommy";
         }
-        return null;
+        //非元音字符, 返回自身
+        return word;
     }
 
 }

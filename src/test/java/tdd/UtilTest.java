@@ -24,6 +24,8 @@ public class UtilTest {
         String expected = "mommy";
         String[] words = {"a", "e", "i", "o", "u"};
         Arrays.asList(words).forEach(word -> assertEquals("mommy", util.mommify(word)));
+
+        assertEquals("c", util.mommify("c"));
     }
 
 }
